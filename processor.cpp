@@ -2,7 +2,9 @@
 
 int main ( int argc, char *argv[] )
 {
-    processor_c<int> proc{ argv[1] };
+    processor<int> proc{ argv[1] };
+    proc.next_fetch();
+    // end check
 
     return 0;
 }
